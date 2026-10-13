@@ -1,0 +1,30 @@
+# Ignora i browser e i dati pesanti
+.config/BraveSoftware/
+.config/chromium/
+.config/adspower_global/
+.config/jxbrowser/
+
+# Ignora cache e configurazioni autogenerate/temporanee
+.config/dconf/
+.config/pulse/
+.config/menus/
+.config/procps/
+.config/systemd/
+.config/libaccounts-glib/
+
+# Ignora file di stato di KDE/Qt che cambiano a ogni avvio
+.config/kconf_updaterc
+.config/kdeglobals
+.config/kdenlive-layoutsrc
+.config/kdenliverc
+.config/kwalletrc
+.config/okularpartrc
+.config/okularrc
+.config/QtProject/
+.config/QtProject.conf
+
+# Ignora registri di pacchetti e runtime vari
+.config/yay/
+.config/go/
+.config/nextjs-nodejs/
+.config/JetBrains/

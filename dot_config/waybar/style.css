@@ -1,0 +1,201 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    min-height: 10px;
+}
+
+@import '../../.cache/wal/colors-waybar.css'; 
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    margin-right: 8px;
+    border-radius: 10px;
+    transition: none;
+    background: @background;
+}
+
+#workspaces button {
+    transition: none;
+    color: @foreground;
+    background: transparent;
+    font-size: 18px;
+}
+
+#workspaces button.active {
+    color: @color6;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    color: @color0;
+    background: @foreground;
+}
+
+#workspaces button.focused {
+    color: @color0;
+}
+
+#language {
+    border-radius: 10px 0px 0px 10px;
+    transition: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: @color6;
+    background: @background;
+}
+
+#keyboard-state {
+    padding-right: 16px;
+    border-radius: 0px 10px 10px 0px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#custom-pacman {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 8px;
+    border-radius: 10px 10px 10px 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#custom-power_btn {
+    background: @background;
+    color: @color6;
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#clock {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px 0px 0px 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#cpu {
+    padding-left: 16px;
+    border-radius: 10px 0px 0px 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+#memory {
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#custom-weather {
+    padding-right: 0px;
+    border-radius: 0px 0px 0px 0px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#pulseaudio {
+    padding-left: 16px;
+    border-radius: 10px 0px 0px 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#pulseaudio.microphone{
+    padding-right: 16px;
+    padding-left: 8px;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 8px;
+}
+
+#temperature {
+    padding-right: 16px;
+    border-radius: 0px 10px 10px 0px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#temperature.critical {
+    background-color: @color6;
+    color: @background;
+}
+
+#backlight {
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#battery {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+#battery.charging {
+    color: @color6;
+    background-color: @background;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @color6;
+    color: @background;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color6;
+    color: @background;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#tray {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: @color6;
+    background: @background;
+}
+
+@keyframes blink {
+    to {
+        background-color: @background;
+        color: @color6;
+    }
+}

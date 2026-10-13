@@ -1,0 +1,18 @@
+profile {
+    output HDMI-A-2 enable position 0,0
+    output eDP-1 disable
+}
+
+profile {
+    output DP-1 enable position 0,0
+    output eDP-1 disable
+}
+
+profile {
+    output DP-4 enable position 0,0
+    output eDP-1 disable
+}
+
+profile {
+    output eDP-1 enable position 0,0
+}
